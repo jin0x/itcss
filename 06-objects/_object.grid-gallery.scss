@@ -1,0 +1,17 @@
+////
+/// Grid Gallery object.
+///
+/// @group  Objects
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.o-grid-gallery {
+  @include grid;
+  @include gridAuto(260px);
+
+  grid-auto-rows: minmax(100px, auto);
+
+  &__item {
+    // Empty
+  }
+}

@@ -1,0 +1,126 @@
+////
+/// Typography.
+///
+/// @group  Utilities
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+/*
+ * Font Families
+ */
+.u-font--primary {
+  font-family: var(--font-primary);
+
+  * {
+    font-family: var(--font-primary);
+  }
+}
+
+/*
+ * Font Sizes
+ */
+.u-text--h1,
+.u-text--h2,
+.u-text--h3,
+.u-text--h4,
+.u-text--h5,
+.u-text--h6 {
+  font-family: var(--font-primary);
+}
+
+/*
+ * Text Align
+ */
+.u-ta--right {
+  text-align: right !important;
+}
+
+.u-ta--left {
+  text-align: left !important;
+}
+
+.u-ta--center {
+  text-align: center !important;
+}
+
+/*
+ * Text Transform
+ */
+.u-tt--uppercase {
+  text-transform: uppercase !important;
+}
+
+.u-tt--capitalize {
+  text-transform: capitalize !important;
+}
+
+/*
+ * Font Weight Values
+ */
+.u-fw--normal {
+  font-weight: normal !important;
+}
+
+.u-fw--bold {
+  font-weight: bold !important;
+}
+
+.u-fw--extra-bold {
+  font-weight: 800 !important;
+}
+
+.u-fw--black {
+  font-weight: 900 !important;
+}
+
+.u-fw--300 {
+  font-weight: 300 !important;
+}
+
+.u-fw--400 {
+  font-weight: 400 !important;
+}
+
+.u-fw--500 {
+  font-weight: 500 !important;
+}
+
+.u-fw--600 {
+  font-weight: 600 !important;
+}
+
+.u-fw--700 {
+  font-weight: 700 !important;
+}
+
+.u-fw--800 {
+  font-weight: 800 !important;
+}
+
+.u-fw--900 {
+  font-weight: 900 !important;
+}
+
+/**
+ * truncate text if it exceeds parent
+ */
+.u-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/**
+ * Hightlight text
+ */
+.u-highlight {
+  background-color: var(--color-primary);
+}
+
+/*
+ * Misc
+ */
+.u-td--n {
+  text-decoration: none !important;
+}

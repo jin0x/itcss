@@ -1,0 +1,16 @@
+////
+/// Card object.
+///
+/// @group  Objects
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.o-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-lg);
+
+  @include mq($from: tablet) {
+    max-width: 20em;
+  }
+}

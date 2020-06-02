@@ -1,0 +1,63 @@
+////
+/// Categories List Object.
+///
+/// @group  Components
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.o-icon-boxes {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -2rem;
+
+  & > * {
+    flex-basis: 100%;
+    padding: 0 var(--space-unit);
+    margin-bottom: 2rem;
+  }
+
+  &--2 {
+    @include mq($from: desktop) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: -1rem;
+      margin-right: -1rem;
+
+      & > * {
+        flex-basis: 50%;
+      }
+    }
+  }
+
+  &--3 {
+    @include mq($from: desktop) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: -1rem;
+      margin-right: -1rem;
+
+      & > * {
+        flex-basis: 33.33333%;
+      }
+    }
+  }
+
+  &--4 {
+    @include mq($from: tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
+
+    & > * {
+      @include mq($from: tablet) {
+        flex-basis: 50%;
+      }
+
+      @include mq($from: desktop) {
+        flex-basis: 25%;
+      }
+    }
+  }
+}

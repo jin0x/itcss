@@ -1,0 +1,29 @@
+////
+/// Component imports.
+///
+/// Components make up the bulk of the actual theme design. Nearly every piece
+/// of the design is some type of component, whether it's a one-off or reusable
+/// block of code.
+///
+/// @group  Components
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+@import "app";
+@import "archive-header";
+@import "breadcrumbs";
+@import "comments";
+@import "comment";
+@import "comment-respond";
+@import "content";
+@import "custom-header";
+@import "entry";
+@import "gallery";
+@import "media-meta";
+@import "nav-menu";
+@import "nav-pagination";
+@import "page";
+@import "post-thumbnail";
+@import "sidebar";
+@import "widget";
+@import "widget-area";

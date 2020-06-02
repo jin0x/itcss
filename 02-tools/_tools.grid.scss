@@ -1,0 +1,65 @@
+/*
+ * Grid Mixin
+ */
+@mixin grid {
+  grid-auto-rows: max-content;
+  grid-template-columns: var(--grid-template-columns);
+  row-gap: var(--grid-gap);
+
+  // fallback for IE
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+
+  > * {
+    float: left;
+    margin-right: var(--gap-horizontal);
+    margin-bottom: var(--gap-vertical);
+  }
+
+  @supports (grid-area: auto) {
+    //CSS Grid style
+    display: grid;
+    grid-column-gap: var(--gap-horizontal);
+    grid-row-gap: var(--gap-vertical);
+
+    &::after,
+    &::before {
+      content: none;
+    }
+
+    > * {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/*
+ * Grid Auto Mixin
+ */
+@mixin gridAuto($min-width, $fallback: 3) {
+  > * {
+    float: left;
+    width: calc(100% / #{$fallback} - #{var(--gap-horizontal)});
+
+    &:nth-child(#{$fallback}n + 1) {
+      clear: both;
+    }
+  }
+
+  @supports (grid-area: auto) {
+    grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+
+    > * {
+      width: auto;
+      margin: 0;
+    }
+  }
+}

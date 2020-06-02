@@ -1,0 +1,20 @@
+////
+/// Post thumbnail component.
+///
+/// @group  Components
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.post-thumbnail {
+  $this: &;
+
+  // Header/Title element.
+  &__inner {
+    // Empty
+  }
+
+  // The list of items.
+  &__image {
+    // Empty
+  }
+}

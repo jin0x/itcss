@@ -1,0 +1,20 @@
+////
+/// Selection.
+///
+/// @group  Generic
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+::selection {
+  color: var(--color-mark);
+  background: var(--color-accent);
+}
+
+::-moz-selection {
+  color: var(--color-mark);
+  background: var(--color-accent);
+}
+
+* {
+  // -webkit-tap-highlight-color: transparent !important;
+}

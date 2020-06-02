@@ -1,0 +1,74 @@
+////
+/// Heading element.
+///
+/// @group  Elements
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+
+  a {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-decoration: none;
+
+    @include onEvent {
+      text-decoration: underline;
+    }
+  }
+}
+
+h1,
+h2,
+h3 {
+  // Empty
+}
+
+h4,
+h5,
+h6 {
+  // Empty
+}
+
+h1 {
+  font-size: 32px;
+  line-height: var(--h1-line-height);
+}
+
+h2 {
+  font-size: 28px;
+  line-height: var(--h2-line-height);
+  letter-spacing: -0.2px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: var(--h3-line-height);
+  letter-spacing: -0.15px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: var(--h4-line-height);
+  letter-spacing: 1.5px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: var(--h5-line-height);
+  letter-spacing: 1.6px;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: var(--h6-line-height);
+  letter-spacing: 1.6px;
+}

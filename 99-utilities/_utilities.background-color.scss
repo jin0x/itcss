@@ -1,0 +1,45 @@
+////
+/// BG Color.
+///
+/// @group  Utilities
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+.u-bg-color {
+  &-gray-1 {
+    background-color: var(--gray-1) !important;
+  }
+
+  &-gray-2 {
+    background-color: var(--gray-2) !important;
+  }
+
+  &-gray-3 {
+    background-color: var(--gray-3) !important;
+  }
+
+  &-gray-4 {
+    background-color: var(--gray-4) !important;
+  }
+
+  &-gray-5 {
+    background-color: var(--gray-5) !important;
+  }
+
+  &-light {
+    background-color: var(--color-light) !important;
+  }
+
+  &-dark {
+    background-color: var(--color-dark) !important;
+  }
+
+  &-primary {
+    background-color: var(--color-primary) !important;
+  }
+
+  &-secondary {
+    background-color: var(--color-secondary) !important;
+  }
+}

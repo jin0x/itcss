@@ -1,0 +1,49 @@
+////
+/// Input element.
+///
+/// @group  Elements
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+
+input {
+  @include onEvent {
+    // Empty
+  }
+
+  @include placeholder {
+    // Empty
+  }
+
+  &[type="submit"] {
+    border: none;
+    -webkit-appearance: none;
+  }
+
+  &[type="button"],
+  &[type="submit"] {
+    border-radius: 2rem;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: var(--btn-font-size);
+    font-weight: bold;
+    justify-content: center;
+    line-height: 1;
+    padding: var(--space-md) var(--space-lg);
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    color: var(--color-light);
+
+    @include onEvent {
+      background-color: var(--color-light);
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+  }
+}
+

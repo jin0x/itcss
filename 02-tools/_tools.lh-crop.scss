@@ -1,0 +1,39 @@
+///* ========================================================================
+//   #LINE-HEIGHT-CROP
+//   ======================================================================== */
+// Mixin to remove unwanted line=height from elements.
+// Further reading: https://medium.com/codyhouse/line-height-crop-a-simple-css-formula-to-remove-top-space-from-your-text-9c3de06d7c6f
+//  @use:
+//
+// 1. Using CSS Variables
+//
+// :root {
+//  /* line-height */
+//  --heading-line-height: 1.2;
+//  --body-line-height: 1.4;
+//  --article-line-height: 1.58;
+// }
+//
+// .text-to-crop {
+//  @include lhCrop(var(--heading-line-height));
+// }
+//
+// 2. Using normal variables
+//
+// .text-to-crop {
+//  @include lhCrop(1.2); //line-height: 1.2
+// }
+//
+// @note:
+// Please try to use it with much care. Should be used mostly on headings and paragraphs that don't
+// use :pseudo-elements like :before or :after. Avoid using on sementic elements like div, aside, section, header, footer, main, etc.
+
+@mixin lhCrop($line-height) {
+  &::before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc((1 - #{$line-height}) * 0.5em);
+  }
+}

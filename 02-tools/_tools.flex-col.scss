@@ -1,0 +1,83 @@
+$grid-columns: 12;
+
+/*
+ * Flex Columns as default
+ * above 1px
+ */
+@for $i from 1 through $grid-columns {
+  .o-flex-col--#{$i} {
+    flex-basis: roundwidth($i);
+    max-width: roundwidth($i);
+    width: roundwidth($i);
+  }
+}
+
+/*
+ * Flex Columns for Phablets
+ * above 640px
+ */
+@include mq($from: phablet) {
+  @for $i from 1 through $grid-columns {
+    .o-flex-col--sm-#{$i} {
+      flex-basis: roundwidth($i);
+      max-width: roundwidth($i);
+      width: roundwidth($i);
+    }
+  }
+}
+
+/*
+ * Flex Columns for Tablets
+ * above 768px
+ */
+@include mq($from: tablet) {
+  @for $i from 1 through $grid-columns {
+    .o-flex-col--md-#{$i} {
+      flex-basis: roundwidth($i);
+      max-width: roundwidth($i);
+      width: roundwidth($i);
+    }
+  }
+}
+
+/*
+ * Flex Columns for Small Desktop screens
+ * above 980px
+ */
+@include mq($from: desktop) {
+  @for $i from 1 through $grid-columns {
+    .o-flex-col--lg-#{$i} {
+      flex-basis: roundwidth($i);
+      max-width: roundwidth($i);
+      width: roundwidth($i);
+    }
+  }
+}
+
+/*
+ * Flex Columns for Wide screens
+ * above 1280px
+ */
+@include mq($from: desktop-large) {
+  @for $i from 1 through $grid-columns {
+    .o-flex-col--xl-#{$i} {
+      flex-basis: roundwidth($i);
+      max-width: roundwidth($i);
+      width: roundwidth($i);
+    }
+  }
+}
+
+/*
+ * Flex Columns for Wide screens
+ * above 1600px
+ */
+@include mq($from: wide) {
+  @for $i from 1 through $grid-columns {
+    .o-flex-col--xxl-#{$i} {
+      flex-basis: roundwidth($i);
+      max-width: roundwidth($i);
+      width: roundwidth($i);
+    }
+  }
+}

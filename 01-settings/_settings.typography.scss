@@ -1,0 +1,110 @@
+////
+/// Typography variables.
+///
+/// @group  Settings
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+:root {
+  /* Modular scale */
+  // $double-octave     | 1:4     | 4
+  // $major-twelfth	    | 1:3     | 3
+  // $major-eleventh    | 3:8     | 2.667
+  // $major-tenth       | 2:5     | 2.5
+  // $octave            | 1:2     | 2
+  // $major-seventh     | 8:15    | 1.875
+  // $minor-seventh     | 9:16    | 1.778
+  // $major-sixth       | 3:5     | 1.667
+  // $phi               | 1:1.618 | 1.618
+  // $golden            | 1:1.618 | 1.618
+  // $minor-sixth       | 5:8     | 1.6
+  // $fifth             | 2:3     | 1.5
+  // $augmented-fourth  | 1:√2    | 1.414
+  // $fourth            | 3:4     | 1.333
+  // $major-third       | 4:5     | 1.25
+  // $minor-third	    | 5:6     | 1.2
+  // $augmented-second  | 1:1.15  | 1.15
+  // $major-second      | 8:9     | 1.125
+  // $minor-second      | 15:16   | 1.067
+  --ms-double-octave: 4;
+  --ms-major-twelfth: 3;
+  --ms-major-eleventh: 1.667;
+  --ms-major-tenth: 2.5;
+  --ms-octave: 2;
+  --ms-major-seventh: 1.875;
+  --ms-minor-seventh: 1.778;
+  --ms-major-sixth: 1.667;
+  --ms-phi: 1.618;
+  --ms-golden: 1.618;
+  --ms-minor-sixth: 1.6;
+  --ms-fifth: 1.5;
+  --ms-augmented-fourth: 1.414;
+  --ms-fourth: 1.333;
+  --ms-major-third: 1.25;
+  --ms-minor-third: 1.2;
+  --ms-augmented-second: 1.15;
+  --ms-major-second: 1.125;
+  --ms-minor-second: 1.067;
+
+  /* Font Faces */
+  --font-primary: "IBM Plex Sans", sans-serif;
+  --font-secondary: "IBM Plex Sans", sans-serif;
+
+  /* Type base */
+  --text-base-size: 1em;
+  --text-scale-ratio: var(--ms-minor-third); // 1.2
+
+  /* type scale */
+  --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+  --text-sm: calc(1em / var(--text-scale-ratio));
+  --text-md: calc(1em * var(--text-scale-ratio));
+  --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+  /* Body */
+  --body-weight: normal;
+  --body-font-size: 18px;
+  --body-line-height: 1.65;
+  --main-menu-font-size: 16px;
+
+  /* Heading Variables */
+  --h1-font-size: 42px;
+  --h1-line-height: 1rem;
+  --h2-font-size: 32px;
+  --h2-line-height: 1.3rem;
+  --h3-font-size: 24px;
+  --h3-font-size-small: 20px;
+  --h3-line-height: 1.3rem;
+  --h4-font-size: 16px;
+  --h4-line-height: 1.3rem;
+  --h5-font-size: 20px;
+  --h5-line-height: 1.3rem;
+  --h6-font-size: 18px;
+  --h6-line-height: var(--h5-line-height);
+
+  /* Misc variables */
+  --button-font-size: 14px;
+  --menu-font-size: 14px;
+  --primary-menu-font-size: 14px;
+  --small-font-size: 0.85rem;
+  --label-font-size: 16px;
+
+  @include mq($from: phablet) {
+    --primary-menu-font-size: 24px;
+  }
+
+  @include mq($from: tablet) {
+    --h1-font-size: 90px;
+    --h2-font-size: 60px;
+    --h3-font-size: 36px;
+    --h3-font-size-small: 32px;
+    --h4-font-size: 24px;
+    --primary-menu-font-size: 36px;
+  }
+
+  @include mq($from: desktop) {
+    --primary-menu-font-size: 18px;
+  }
+}

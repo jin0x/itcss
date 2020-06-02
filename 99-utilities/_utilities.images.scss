@@ -1,0 +1,17 @@
+////
+/// Images.
+///
+/// @group  Utilities
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+.u-img--parallax {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include mq($from: desktop-large) {
+    background-attachment: fixed;
+  }
+}

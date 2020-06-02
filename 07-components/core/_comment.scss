@@ -1,0 +1,70 @@
+////
+/// Comment component.
+///
+/// This is the component for handling individual comments in a comments list.
+///
+/// @group  Components
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+.comment {
+
+  // Type of comment.
+  &--type-comment {
+    // Empty
+  }
+
+  &--type-ping {
+    // Empty
+  }
+
+  // Comment status.
+  &--status-unapproved {
+    // Empty
+  }
+
+  // Full comment text/content.
+  &__content {
+    // Empty
+  }
+
+  // Comment under moderation message.
+  &__moderation {
+    // Empty
+  }
+
+  // Metadata wrapper.
+  &__meta {
+    // Empty
+  }
+
+  // Individual metadata items.
+  &__avatar {
+    // Empty
+  }
+
+  &__author {
+    // Empty
+  }
+
+  &__permalink {
+    // Empty
+  }
+
+  &__date {
+    // Empty
+  }
+
+  &__time {
+    // Empty
+  }
+
+  &__edit {
+    // Empty
+  }
+
+  &__reply {
+    // Empty
+  }
+}

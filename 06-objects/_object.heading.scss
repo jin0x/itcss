@@ -1,0 +1,52 @@
+////
+/// Heading object.
+///
+/// @group  Objects
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+////
+.o-heading {
+  $this: &;
+
+  margin: 0 auto 2rem;
+  width: 100%;
+
+  @include mq($from: desktop) {
+    margin: 0 auto 4rem;
+  }
+
+  /*
+   * Size Options
+   */
+  &--small {
+    margin-bottom: var(--space-md);
+  }
+
+  &--medium-small {
+    margin-bottom: var(--space-lg);
+  }
+
+  &--medium {
+    @include mq($from: desktop) {
+      margin-bottom: var(--space-xl);
+    }
+  }
+
+  &--large {
+    @include mq($from: desktop) {
+      margin-bottom: var(--space-xxl);
+    }
+  }
+
+  /* Alignment Options */
+  &--center {
+    justify-content: center;
+    text-align: center;
+  }
+
+  &--right {
+    justify-content: flex-end;
+    text-align: right;
+  }
+}

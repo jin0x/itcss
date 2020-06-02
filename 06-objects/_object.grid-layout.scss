@@ -1,0 +1,26 @@
+////
+/// Grid Layout object.
+///
+/// @group  Objects
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.o-grid-layout {
+  @include grid;
+
+  grid-auto-rows: 120px;
+
+  @include gridLayout(
+    (7, 2), //item 1
+    (5, 1), //item 2
+    (5, 1), //item 3
+    (12, 1), //item 4
+    (6, 3), //item 5
+    (6, 1), //item 6
+    (6, 2) //item 7
+  );
+
+  > * {
+    // Empty
+  }
+}

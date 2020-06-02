@@ -1,0 +1,94 @@
+////
+/// Widget component.
+///
+/// @group  Components
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.widget {
+  $this: &;
+
+  margin-bottom: 3rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include mq($from: desktop) {
+    margin-bottom: 0;
+  }
+
+  // Core widgets.
+  &--archives {
+    // Empty
+  }
+
+  &--calendar {
+    // Empty
+  }
+
+  &--categories {
+    // Empty
+  }
+
+  &--custom-html {
+    // Empty
+  }
+
+  &--media-audio {
+    // Empty
+  }
+
+  &--media-gallery {
+    // Empty
+  }
+
+  &--media-image {
+    // Empty
+  }
+
+  &--media-video {
+    // Empty
+  }
+
+  &--meta {
+    // Empty
+  }
+
+  &--nav-menu {
+    // Empty
+  }
+
+  &--pages {
+    // Empty
+  }
+
+  &--recent-comments {
+    // Empty
+  }
+
+  &--recent-posts {
+    // Empty
+  }
+
+  &--rss {
+    // Empty
+  }
+
+  &--text {
+    // Empty
+  }
+
+  &--search {
+    // Empty
+  }
+
+  &--tag-cloud {
+    // Empty
+  }
+
+  // Widget titles.
+  &__title {
+    // Empty
+  }
+}

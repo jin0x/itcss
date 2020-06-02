@@ -1,0 +1,19 @@
+////
+/// Button variables.
+///
+/// @group  Settings
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+:root {
+  /* Buttons */
+  --btn-font-size: 1em;
+  --btn-sm: calc(var(--btn-font-size) - 0.2em);
+  --btn-md: calc(var(--btn-font-size) + 0.2em);
+  --btn-lg: calc(var(--btn-font-size) + 0.4em);
+  --btn-radius--xs: calc(var(--radius) - 0.4em);
+  --btn-radius--sm: calc(var(--radius) - 0.2em);
+  --btn-radius: var(--radius);
+  --btn-radius--lg: calc(var(--radius) + 0.2em);
+  --btn-radius--xl: calc(var(--radius) + 0.4em);
+}

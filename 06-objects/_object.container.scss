@@ -1,0 +1,46 @@
+////
+/// Container object.
+///
+/// @group  Objects
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.o-container {
+  max-width: var(--max-width); // 1180px
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  &--xxs {
+    max-width: var(--max-width--xxs); // 580px
+  }
+
+  &--xs {
+    max-width: var(--max-width--xs); // 780px
+  }
+
+  &--sm {
+    max-width: var(--max-width--sm); // 920px
+  }
+
+  &--md {
+    max-width: var(--max-width--md); // 1000px
+  }
+
+  &--lg {
+    max-width: var(--max-width--lg); // 1280px
+  }
+
+  &--xl {
+    max-width: var(--max-width--xl); // 1440px
+  }
+
+  [class^="o-container"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

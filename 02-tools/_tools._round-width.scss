@@ -1,0 +1,6 @@
+/* round flex items' width */
+@function roundwidth ($i) {
+  $width: floor(100 * $i * 100/ $grid-columns) / 100;
+
+  @return unquote(($width) + "%");
+}

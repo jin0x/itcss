@@ -1,0 +1,56 @@
+////
+/// Color variables.
+///
+/// @group  Settings
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+:root {
+  // Main Colors
+  --color-primary: hsl(227, 52%, 36%);
+  --color-primary-medium: hsl(227, 53%, 29%);
+  --color-primary-dark: hsl(202, 38%, 18%);
+  --color-secondary: hsl(359, 69%, 41%);
+  --color-secondary-dark: hsl(359, 75%, 38%);
+  --color-secondary-transparent: hsla(346, 69, 41, 0.65);
+
+  // Mark (selection)
+  --color-mark: var(--color-secondary);
+
+  // Blue Colors
+  --blue-1: #b7d2dd;
+  --blue-2: #3092c1;
+  --blue-3: #2e8fc8;
+  --blue-4: #0339f8;
+  --blue-5: #1d2c60;
+
+  // Green Colors
+  --green-1: #07c356;
+  --green-2: #8fc447;
+
+  // Yellow Colors
+  --yellow-1: #f2c40a;
+
+  // Shades
+  --color-light: white;
+  --gray-1: #f6f8fa;
+  --gray-2: #e4e4e4;
+  --gray-3: #ccc;
+  --gray-4: #979797;
+  --gray-5: #999;
+  --gray-8: #20222c;
+  --gray-9: #0a0a0a;
+  --color-dark: black;
+
+  /* Misc */
+  --color-overlay: rgba(0, 0, 0, 0.5);
+
+  /* Text Colors */
+  --text-color: #5a5858;
+  --menu-color: var(--color-dark);
+}
+
+[data-theme="light"] {
+  color: var(--color-light);
+}

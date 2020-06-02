@@ -1,0 +1,19 @@
+////
+/// Width variables.
+///
+/// @group  Settings
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+:root {
+  /* Sizing  */
+  --max-width--xxs: 38.75rem; // 620px in 16px base pixel size
+  --max-width--xs: 48.75rem; // 780px in 16px base pixel size
+  --max-width--sm: 57.5rem; // 920px in 16px base pixel size
+  --max-width--md: 61.25rem; // 980 in 16px base pixel size
+  --max-width: 73.75rem; // 1180px in 16px base pixel size
+  --max-width--lg: 80rem; // 1280px in 16px base pixel size
+  --max-width--xl: 90rem; // 1440px in 16px base pixel size
+  --page-max-wrapper: 120rem; // 1920px in 16px base pixel size
+  --page-max-wrapper-large: 160rem; // 2560px in 16px base pixel size
+}

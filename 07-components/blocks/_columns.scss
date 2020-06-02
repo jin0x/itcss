@@ -1,0 +1,41 @@
+////
+/// Columns block.
+///
+/// @group  Blocks
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.wp-block-columns {
+  display: flex;
+  flex-direction: column;
+
+  @include mq($from: desktop) {
+    flex-direction: row;
+  }
+
+  &--alternate {
+    &.has-2-columns {
+      flex-direction: column-reverse;
+
+      @include mq($from: desktop) {
+        flex-direction: row;
+      }
+    }
+  }
+
+  // Add styles based on the number of columns. Supports 2-6 columns.
+  &.has-2-columns {
+    // Empty
+  }
+}
+
+// Individual columns.
+.wp-block-column {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+// Editor specific styling. Make sure columns span correctly.
+.editor-inner-blocks {
+  flex: 1;
+}

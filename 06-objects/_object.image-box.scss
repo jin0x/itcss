@@ -1,0 +1,27 @@
+////
+/// Image Box object.
+///
+/// @group  Objects
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.o-image-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+    object-position: center top;
+
+    @include mq($from: desktop) {
+      min-height: 300px;
+      min-width: 300px;
+    }
+  }
+}
+
+
+

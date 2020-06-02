@@ -1,0 +1,32 @@
+////
+/// Rhythm.
+///
+/// @group  Utilities
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+.u-rhythm--none > *,
+.u-rhythm--small > *,
+.u-rhythm--medium-small > *,
+.u-rhythm--medium > *,
+.u-rhythm--large > * {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.u-rhythm--small > * + * {
+  margin-top: 0.2rem;
+}
+
+.u-rhythm--medium-small > * + * {
+  margin-top: 0.4rem;
+}
+
+.u-rhythm--medium > * + * {
+  margin-top: 1rem;
+}
+
+.u-rhythm--large > * + * {
+  margin-top: 1.8rem;
+}

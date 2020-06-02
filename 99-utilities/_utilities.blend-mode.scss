@@ -1,0 +1,79 @@
+////
+/// Blend Mode.
+///
+/// @group  Utilities
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+[class*="u-blend-mode"] {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+    background-color: var(--color-dark);
+    mix-blend-mode: color;
+  }
+}
+
+.u-blend-mode {
+  &-gray-1 {
+    &::before {
+      background-color: var(--gray-1) !important;
+    }
+  }
+
+  &-gray-2 {
+    &::before {
+      background-color: var(--gray-2) !important;
+    }
+  }
+
+  &-gray-3 {
+    &::before {
+      background-color: var(--gray-3) !important;
+    }
+  }
+
+  &-gray-4 {
+    &::before {
+      background-color: var(--gray-4) !important;
+    }
+  }
+
+  &-gray-5 {
+    &::before {
+      background-color: var(--gray-5) !important;
+    }
+  }
+
+  &-light {
+    &::before {
+      background-color: var(--color-light) !important;
+    }
+  }
+
+  &-dark {
+    &::before {
+      background-color: var(--color-dark) !important;
+    }
+  }
+
+  &-primary {
+    &::before {
+      background-color: var(--color-primary) !important;
+    }
+  }
+
+  &-secondary {
+    &::before {
+      background-color: var(--color-secondary) !important;
+    }
+  }
+}

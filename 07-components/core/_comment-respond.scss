@@ -1,0 +1,66 @@
+////
+/// Comment respond form component.
+///
+/// @group  Components
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+.comment-respond {
+
+  // Header/title for the respond section.
+  &__reply-title {
+    // Empty
+  }
+
+  // The comment form.
+  &__form {
+    // Empty
+  }
+
+  &__submit {
+    // Empty
+  }
+
+  // Note section at the top of form.
+  &__notes {
+    // Empty
+  }
+
+  // Logged-in message at the top of the form.
+  &__logged-in-as {
+    // Empty
+  }
+
+  // The wrapping element around individual form fields.
+  &__field {
+    &--comment {
+      // Empty
+    }
+
+    &--author {
+      // Empty
+    }
+
+    &--email {
+      // Empty
+    }
+
+    &--url {
+      // Empty
+    }
+
+    &--cookies {
+      // Empty
+    }
+
+    &--submit {
+      // Empty
+    }
+  }
+
+  // Comments closed message.
+  &__closed {
+    // Empty
+  }
+}

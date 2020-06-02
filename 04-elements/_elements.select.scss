@@ -1,0 +1,13 @@
+////
+/// Select element.
+///
+/// @group  Elements
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+select {
+  font-size: var(--input-size);
+  font-weight: var(--input-weight);
+  line-height: var(--input-line-height);
+  background-color: var(--color-light);
+}

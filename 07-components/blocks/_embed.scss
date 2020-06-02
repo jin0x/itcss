@@ -1,0 +1,39 @@
+////
+/// Embed block.
+///
+/// @group  Blocks
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.wp-block-embed {
+  // Image embeds.
+  &.is-type-image {
+    // Empty
+  }
+
+  // Audio embeds.
+  &.is-type-audio {
+    // Empty
+  }
+
+  // Rich text embeds (text, Twitter, etc.)
+  &.is-type-rich {
+    // Empty
+  }
+
+  // Video embeds.
+  &.is-type-video {
+    // Empty
+  }
+
+  // Directly target iframes.
+  iframe {
+    // Empty
+  }
+
+  // Caption below embedded content.
+  figcaption {
+    margin-top: 0.5em;
+    text-align: center;
+  }
+}

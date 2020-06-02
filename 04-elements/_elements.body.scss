@@ -1,0 +1,36 @@
+////
+/// Body element.
+///
+/// @group  Elements
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  background-color: var(--color-light);
+  font-size: var(--text-md);
+  font-weight: var(--body-weight);
+  line-height: var(--body-line-height);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+
+  &.is-hidden,
+  &.is-blocked,
+  &.is-gradpanel-open {
+    overflow: hidden;
+  }
+
+  &.is-nav-mobile-open {
+    overflow: hidden;
+
+    @include mq($from: desktop) {
+      overflow: visible;
+    }
+  }
+}

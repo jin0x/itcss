@@ -1,0 +1,76 @@
+////
+/// Entry component.
+///
+/// @group  Components
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+.entry {
+  $this: &;
+
+  // Type of entry/post.
+  &--type-post {
+    // Empty
+  }
+
+  &--type-page {
+    // Empty
+  }
+
+  // Sticky posts.
+  &.sticky {
+    // Empty
+  }
+
+  // Featured image.
+  &__image {
+    // Empty
+  }
+
+  // Header wrapper.
+  &__header {
+    // Empty
+  }
+
+  // Entry title.
+  &__title {
+    // Empty
+  }
+
+  // Full entry content.
+  &__content {
+    // Empty
+  }
+
+  // Summary/Excerpt.
+  &__summary {
+    // Empty
+  }
+
+  // Meta wrappers.
+  &__byline {
+    // Empty
+  }
+
+  &__footer {
+    // Empty
+  }
+
+  // Individual metadata items.
+  &__author {
+    // Empty
+  }
+
+  &__published {
+    // Empty
+  }
+
+  &__comments {
+    // Empty
+  }
+
+  &__terms {
+    // Empty
+  }
+}

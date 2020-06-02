@@ -1,0 +1,57 @@
+////
+/// Primary screen stylesheet.
+///
+/// This is the primary stylesheet. We don't actually write any styles here.
+/// Instead, we import all of our styles from partials within the sub-folders.
+/// This file is set up based on the Inverted Triangle CSS (ITCSS) system,
+/// which gets more specific as we drill down each layer.  This keeps your
+/// style code lean and organized.
+///
+/// The bulk of your code should be within the `/wp` folder.  By
+/// default, we follow the Block-Element-Modifier (BEM) system in our HTML.
+/// Each "block" is a "component" in our CSS.
+///
+/// @group  Styles
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+// Imports all of the files needed for front-end output. Note that the order is
+// very specific and should typically not be changed.
+
+// ITCSS structure
+// Original post by Harry Roberts
+// https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
+
+// 00. Libraries
+@import "00-libraries/libraries.sass-mq";
+
+// 01. Settings
+@import "01-settings/_index";
+
+// 02.Tools
+@import "02-tools/_index";
+
+// 03. Generic
+@import "03-generic/_index";
+
+// 04. Elements
+@import "04-elements/_index";
+
+// 05. Layouts
+@import "05-layouts/_index";
+
+// 06. Objects
+@import "06-objects/_index";
+
+// 07. Components
+@import "07-components/_index";
+
+// 08. Scopes
+@import "08-scopes/_index";
+
+// 09. Vendors
+@import "09-vendors/_index";
+
+// 99. Utilities
+@import "99-utilities/_index";

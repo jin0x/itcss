@@ -1,0 +1,136 @@
+////
+/// Grid Layout object.
+///
+/// @group  Objects
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+.o-grid {
+  @include grid();
+
+  & > * {
+    width: 100%;
+    grid-column: auto / span 12;
+  }
+
+  /*
+   *
+   * GRID NO. COLUMNS
+   *
+   */
+
+  /* 2-columns */
+  &--col-2 {
+    > * {
+      @include mq($from: phablet) {
+        grid-column: auto / span 6;
+      }
+    }
+  }
+
+  /* 3-columns */
+  &--col-3 {
+    > * {
+      @include mq($from: phablet) {
+        grid-column: auto / span 6;
+      }
+
+      @include mq($from: desktop) {
+        grid-column: auto / span 4;
+      }
+    }
+  }
+
+  /* 4-columns */
+  &--col-4 {
+    > * {
+      @include mq($from: phablet) {
+        grid-column: auto / span 6;
+      }
+
+      @include mq($from: tablet) {
+        grid-column: auto / span 4;
+      }
+
+      @include mq($from: desktop) {
+        grid-column: auto / span 3;
+      }
+    }
+  }
+
+  /* 6-columns */
+  &--col-6 {
+    > * {
+      @include mq($from: phablet) {
+        grid-column: auto / span 6;
+      }
+
+      @include mq($from: tablet) {
+        grid-column: auto / span 3;
+      }
+
+      @include mq($from: desktop) {
+        grid-column: auto / span 2;
+      }
+    }
+  }
+
+  /*
+   *
+   * GRID COLUMN GAP
+   *
+   */
+  &--column-gap {
+    @include mq($from: phablet) {
+      &-sm {
+        grid-column-gap: calc(var(--grid-gap) / 2);
+      }
+
+      &-md {
+        grid-column-gap: calc(var(--grid-gap) / 1.5);
+      }
+
+      &-lg {
+        grid-column-gap: calc(var(--grid-gap) * 2);
+      }
+
+      &-xl {
+        grid-column-gap: calc(var(--grid-gap) * 3);
+      }
+    }
+
+    &-none {
+      grid-column-gap: 0;
+    }
+  }
+
+  /*
+   *
+   * GRID ROW GAP
+   *
+   */
+  &--row-gap {
+    @include mq($from: phablet) {
+      &-sm {
+        grid-row-gap: calc(var(--grid-gap) / 2);
+      }
+
+      &-md {
+        grid-row-gap: calc(var(--grid-gap) / 1.5);
+      }
+
+      &-lg {
+        grid-row-gap: calc(var(--grid-gap) * 2);
+      }
+
+      &-xl {
+        grid-row-gap: calc(var(--grid-gap) * 3);
+      }
+    }
+
+    &-none {
+      grid-row-gap: 0;
+    }
+  }
+}

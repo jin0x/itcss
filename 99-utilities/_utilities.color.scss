@@ -1,0 +1,45 @@
+////
+/// Color.
+///
+/// @group  Utilities
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+.u-color {
+  &-gray-1 {
+    color: var(--gray-1) !important;
+  }
+
+  &-gray-2 {
+    color: var(--gray-2) !important;
+  }
+
+  &-gray-3 {
+    color: var(--gray-3) !important;
+  }
+
+  &-gray-4 {
+    color: var(--gray-4) !important;
+  }
+
+  &-gray-5 {
+    color: var(--gray-5) !important;
+  }
+
+  &-light {
+    color: var(--color-light) !important;
+  }
+
+  &-dark {
+    color: var(--color-dark) !important;
+  }
+
+  &-primary {
+    color: var(--color-primary) !important;
+  }
+
+  &-secondary {
+    color: var(--color-secondary) !important;
+  }
+}

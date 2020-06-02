@@ -1,0 +1,71 @@
+////
+/// Text elements.
+///
+/// @group  Elements
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+p,
+span,
+li,
+a {
+  font-size: var(--body-font-size);
+  font-weight: var(--body-weight);
+  line-height: var(--body-line-height);
+}
+
+li {
+  // Empty
+}
+
+p {
+  margin-bottom: 1rem;
+
+  span {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+}
+
+label {
+  a {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+}
+
+/*
+ * Small
+ */
+small {
+  font-size: var(--small-font-size);
+}
+
+/*
+ * Strong tags
+ */
+b,
+strong {
+  font-weight: 700;
+}
+
+i,
+em,
+cite {
+  font-style: italic;
+}
+
+mark {
+  // Empty
+}
+
+del {
+  // Empty
+}
+
+del + ins {
+  // Empty
+}

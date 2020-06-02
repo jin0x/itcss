@@ -1,0 +1,15 @@
+////
+/// Code element.
+///
+/// @group  Elements
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+pre {
+  background: var(--color-light);
+  padding: 1.25em 2rem;
+  box-shadow:
+    0 0 15px rgba(0, 0, 0, 0.08),
+    0 0 4px rgba(0, 0, 0, 0.05);
+  // TODO: Make box-shadow dynamic through function? (https://codepen.io/jinox/pen/8141edaca3de0d44daff48dbfc4fcc6e)
+}

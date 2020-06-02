@@ -1,0 +1,29 @@
+////
+/// Border Radius
+///
+/// @group  Utilities
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+.u-br {
+  &--sm {
+    border-radius: 1rem;
+  }
+
+  &--md {
+    border-radius: 1.5rem;
+  }
+
+  &--lg {
+    border-radius: 2rem;
+  }
+
+  &--xl {
+    border-radius: 3rem;
+  }
+
+  &--circle {
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,38 @@
+////
+/// Icon.
+///
+/// @group  Utilities
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+/* icon size */
+.u-icon--xs {
+  font-size: var(--icon-xs);
+  max-height: var(--icon-xs);
+}
+
+.u-icon--sm {
+  font-size: var(--icon-sm);
+  max-height: var(--icon-sm);
+}
+
+.u-icon--md {
+  font-size: var(--icon-md);
+  max-height: var(--icon-md);
+}
+
+.u-icon--lg {
+  font-size: var(--icon-lg);
+  max-height: var(--icon-lg);
+}
+
+.u-icon--xl {
+  font-size: var(--icon-xl);
+  max-height: var(--icon-xl);
+}
+
+.u-icon--xxl {
+  font-size: var(--icon-xxl);
+  max-height: var(--icon-xxl);
+}

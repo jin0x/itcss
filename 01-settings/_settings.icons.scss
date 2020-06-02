@@ -1,0 +1,16 @@
+////
+/// Icon variables.
+///
+/// @group  Settings
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+:root {
+  --icon-unit: 1rem;
+  --icon-xs: var(--icon-unit);
+  --icon-sm: calc(2 * var(--icon-unit));
+  --icon-md: calc(4 * var(--icon-unit));
+  --icon-lg: calc(6 * var(--icon-unit));
+  --icon-xl: calc(8 * var(--icon-unit));
+  --icon-xxl: calc(10 * var(--icon-unit));
+}

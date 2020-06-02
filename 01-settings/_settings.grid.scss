@@ -1,0 +1,14 @@
+////
+/// Grid variables.
+///
+/// @group  Settings
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+:root {
+  --grid-columns: 12;
+  --grid-gap: 1rem;
+  --gap-vertical: var(--grid-gap);
+  --gap-horizontal: var(--grid-gap);
+  --grid-template-columns: repeat(12, 1fr);
+}

@@ -1,0 +1,54 @@
+////
+/// Pagination component.
+///
+/// @group  Components
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.pagination {
+  $this: &;
+
+  // Header/Title element.
+  &__title {
+    // Empty
+  }
+
+  // The list of items.
+  &__items {
+    display: flex;
+  }
+
+  // Individual items.
+  &__item {
+    &--prev {
+      // Empty
+    }
+
+    &--next {
+      // Empty
+    }
+
+    &--current {
+      // Empty
+    }
+
+    &--dots {
+      // Empty
+    }
+  }
+
+  // The link or span element.
+  &__anchor {
+    &--link {
+      // Empty
+    }
+
+    &--current {
+      // Empty
+    }
+
+    &--dots {
+      // Empty
+    }
+  }
+}

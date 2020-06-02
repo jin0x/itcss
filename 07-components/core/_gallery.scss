@@ -1,0 +1,28 @@
+////
+/// Gallery (shortcode) component.
+///
+/// @group  Components
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.gallery {
+  $this: &;
+
+  @include mq($from: phablet) {
+    @for $i from 1 through 10 {
+      &-columns-#{ $i } &-item {
+        // Empty
+      }
+    }
+  }
+
+  &-icon {
+    img {
+      // Empty
+    }
+  }
+
+  &-caption {
+    // Empty
+  }
+}

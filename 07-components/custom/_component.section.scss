@@ -1,0 +1,18 @@
+////
+/// Section component.
+///
+/// @group  Components
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.c-section {
+  $this: &;
+
+  max-width: 100%;
+  padding: 1rem 0;
+  position: relative;
+
+  @include mq($from: tablet) {
+    padding: 2rem 0;
+  }
+}

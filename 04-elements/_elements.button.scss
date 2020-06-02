@@ -1,0 +1,16 @@
+////
+/// Blockquote element.
+///
+/// @group  Elements
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+button {
+  cursor: pointer;
+
+  &[disabled] {
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.6;
+  }
+}

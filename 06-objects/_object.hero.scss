@@ -1,0 +1,34 @@
+////
+/// Hero object.
+///
+/// @group  Objects
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+.o-hero {
+  $this: &;
+
+  display: flex;
+  min-height: 45vw;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  /*
+   * Hero Sizes
+   */
+  &--full {
+    height: 100vh;
+    max-height: 100%;
+  }
+
+  &--partial {
+    height: 70vh;
+
+    @include mq($from: tablet) {
+      height: 85vh;
+      max-height: 85%;
+    }
+  }
+}

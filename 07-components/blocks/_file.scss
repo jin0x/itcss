@@ -1,0 +1,34 @@
+////
+/// File block.
+///
+/// @group  Blocks
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.wp-block-file {
+  margin-bottom: 1.5em;
+
+  &.aligncenter {
+    text-align: center;
+  }
+
+  &.alignright {
+    text-align: right;
+  }
+
+  &__button {
+    background: black;
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+    &:hover,
+    &:visited,
+    &:focus,
+    &:active {
+      color: white;
+      opacity: 0.85;
+      text-decoration: none;
+    }
+  }
+}

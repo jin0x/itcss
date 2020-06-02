@@ -1,0 +1,14 @@
+////
+/// Box model variables.
+///
+/// @group  Settings
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+:root {
+  /* Box Model */
+  --border-radius: 0.25rem;
+  --radius: 1rem;
+  --box-shadow: 1px solid rgba(48, 59, 63, 0.21);
+  --box-shadow-hover: 1px solid rgba(48, 59, 63, 0.33);
+}

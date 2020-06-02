@@ -1,0 +1,15 @@
+////
+/// Article object.
+///
+/// @group  Objects
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.o-article {
+  max-width: var(--typography-max-width);
+
+  @include spacingsides;
+
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,22 @@
+////
+/// Flex Grid object.
+///
+/// @group  Objects
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+.o-flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--grid-gap) * -1) 0 0 calc(var(--grid-gap) * -1);
+
+  &--alternate {
+    @include mq($from: desktop) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &--space-between {
+    justify-content: space-between;
+  }
+}

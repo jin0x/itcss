@@ -1,0 +1,38 @@
+////
+/// Alignment.
+///
+/// @group  Utilities
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+/*
+ * Align Items Horizontally
+ */
+.u-ai {
+  &--top {
+    align-items: flex-start !important;
+  }
+
+  &--center {
+    align-items: center !important;
+  }
+
+  &--bottom {
+    align-items: flex-end !important;
+  }
+}
+
+.u-jc {
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
+}

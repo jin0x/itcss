@@ -1,0 +1,11 @@
+////
+/// Clearfix.
+///
+/// @group  Utilities
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+.u-clearfix {
+  @include clearfix;
+}

@@ -1,0 +1,43 @@
+////
+/// All elements.
+///
+/// @group  Elements
+/// @author John Leskas <john.leskas@gmail.com>
+/// @link   https://johnleskas.com
+////
+
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+* {
+  max-width: 100%; // Fix for IE11
+  -webkit-tap-highlight-color: transparent !important; /* for removing the highlight */
+
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+
+  @include onEvent {
+    outline: none !important;
+  }
+
+  &::selection {
+    color: var(--color-light);
+    background-color: var(--color-primary);
+  }
+}
+
+mark {
+  // Empty
+}
